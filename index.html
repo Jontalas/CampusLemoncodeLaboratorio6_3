@@ -24,13 +24,13 @@
                 <label>200 €</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail200" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail200" type="number" value="0" min="0">
             </span>
             <span class="elementRight">
                 <label>2 €</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail2" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail2" type="number" value="0" min="0">
             </span>
         </div>
         <div class="table">
@@ -38,13 +38,13 @@
                 <label>100 €</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail100" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail100" type="number" value="0" min="0">
             </span>
             <span class="elementRight">
                 <label>1 €</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail1" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail1" type="number" value="0" min="0">
             </span>
         </div>
         <div class="table">
@@ -52,13 +52,13 @@
                 <label>50 €</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail50" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail50" type="number" value="0" min="0">
             </span>
             <span class="elementRight">
                 <label>50 cent</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail050" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail050" type="number" value="0" min="0">
             </span>
         </div>
         <div class="table">
@@ -66,13 +66,13 @@
                 <label>20 €</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail20" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail20" type="number" value="0" min="0">
             </span>
             <span class="elementRight">
                 <label>20 cent</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail020" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail020" type="number" value="0" min="0">
             </span>
         </div>
         <div class="table">
@@ -80,13 +80,13 @@
                 <label>10 €</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail10" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail10" type="number" value="0" min="0">
             </span>
             <span class="elementRight">
                 <label>10 cent</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail010" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail010" type="number" value="0" min="0">
             </span>
         </div>
         <div class="table">
@@ -94,13 +94,13 @@
                 <label>5 €</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail5" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail5" type="number" value="0" min="0">
             </span>
             <span class="elementRight">
                 <label>5 cent</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail005" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail005" type="number" value="0" min="0">
             </span>
         </div>
         <div class="table">
@@ -112,21 +112,21 @@
                 <label>2 cent</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail002" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail002" type="number" value="0" min="0">
             </span>
         </div>
         <div class="table">
             <span class="elementRight">
-                <input type="button" value="Llenar">
+                <input type="button" value="Llenar" onclick="fillMoneyAll(100)">
             </span>
             <span class="element">
-                <input type="button" value="Vaciar">
+                <input type="button" value="Vaciar" onclick="fillMoneyAll(0)">
             </span>
             <span class="elementRight">
                 <label>1 cent</label>
             </span>
             <span class="elementLeft">
-                <input class="availInput" id="avail001" type="number" value="0" min="0" max="100">
+                <input class="availInput" id="avail001" type="number" value="0" min="0">
             </span>
         </div>
         <br>
@@ -137,22 +137,22 @@
         <div class="table">
             <span class="element">
                 <label>Precio</label>
-                <input class="calculoInput" id="precio" type="number" value="0" min="0">
+                <input class="calculoInput" id="precio" type="number" value="0.00" min="0">
             </span>
             <span class="element">
                 <label>Pagado</label>
-                <input class="calculoInput" id="pagado" type="number" value="0" min="0">
+                <input class="calculoInput" id="pagado" type="number" value="0.00" min="0">
             </span>
         </div>
         <br>
         <div class="table">
             <span class="element">
-                <input class="button" type="button" value="Calcular">
+                <input class="button" type="button" value="Calcular" onclick="calculate()">
             </span>
         </div>
         <br>
         <label class="cambioLabel">Cambio:</label>
-        <textarea class="textBox" id="cambio"></textarea>
+        <textarea class="textBox" id="cambio" readonly></textarea>
     </div>
     <h1 align="center">(Consultar la consola para ver los resultados de la Agenda)</h1>
     <script src="Laboratorio6_3.js"></script>
