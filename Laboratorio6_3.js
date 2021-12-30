@@ -1,4 +1,4 @@
-// Disponibilidad de equipo -------------------------
+// Agenda -------------------------
 
 // Constantes
 var WORK_HOURS = [

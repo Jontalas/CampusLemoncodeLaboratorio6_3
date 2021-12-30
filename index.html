@@ -6,10 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laboratorio 6 - Parte 3</title>
-</head>
+    <link rel="stylesheet" href="site.css" </head>
 
 <body>
-    <h1 align="center">(Consultar la consola para ver los resultados de la disponibilidad de equipo)</h1>
+    <div class="container">
+        <h1 align="center">Disponibilidad de billetes y monedas</h1>
+        <div class="table">
+            <span class="element">
+                <h3>Billetes</h3>
+            </span>
+            <span class="element">
+                <h3>Monedas</h3>
+            </span>
+        </div>
+        <div class="table">
+            <span class="elementRight">
+                <label>200 €</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail200" type="number" value="0" min="0" max="100">
+            </span>
+            <span class="elementRight">
+                <label>2 €</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail2" type="number" value="0" min="0" max="100">
+            </span>
+        </div>
+        <div class="table">
+            <span class="elementRight">
+                <label>100 €</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail100" type="number" value="0" min="0" max="100">
+            </span>
+            <span class="elementRight">
+                <label>1 €</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail1" type="number" value="0" min="0" max="100">
+            </span>
+        </div>
+        <div class="table">
+            <span class="elementRight">
+                <label>50 €</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail50" type="number" value="0" min="0" max="100">
+            </span>
+            <span class="elementRight">
+                <label>50 cent</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail050" type="number" value="0" min="0" max="100">
+            </span>
+        </div>
+        <div class="table">
+            <span class="elementRight">
+                <label>20 €</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail20" type="number" value="0" min="0" max="100">
+            </span>
+            <span class="elementRight">
+                <label>20 cent</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail020" type="number" value="0" min="0" max="100">
+            </span>
+        </div>
+        <div class="table">
+            <span class="elementRight">
+                <label>10 €</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail10" type="number" value="0" min="0" max="100">
+            </span>
+            <span class="elementRight">
+                <label>10 cent</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail010" type="number" value="0" min="0" max="100">
+            </span>
+        </div>
+        <div class="table">
+            <span class="elementRight">
+                <label>5 €</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail5" type="number" value="0" min="0" max="100">
+            </span>
+            <span class="elementRight">
+                <label>5 cent</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail005" type="number" value="0" min="0" max="100">
+            </span>
+        </div>
+        <div class="table">
+            <span class="elementRight">
+            </span>
+            <span class="elementLeft">
+            </span>
+            <span class="elementRight">
+                <label>2 cent</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail002" type="number" value="0" min="0" max="100">
+            </span>
+        </div>
+        <div class="table">
+            <span class="elementRight">
+                <input type="button" value="Llenar">
+            </span>
+            <span class="element">
+                <input type="button" value="Vaciar">
+            </span>
+            <span class="elementRight">
+                <label>1 cent</label>
+            </span>
+            <span class="elementLeft">
+                <input class="availInput" id="avail001" type="number" value="0" min="0" max="100">
+            </span>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class="container">
+        <h1 align="center">Calculo de cambio optimo</h1>
+        <div class="table">
+            <span class="element">
+                <label>Precio</label>
+                <input class="calculoInput" id="precio" type="number" value="0" min="0">
+            </span>
+            <span class="element">
+                <label>Pagado</label>
+                <input class="calculoInput" id="pagado" type="number" value="0" min="0">
+            </span>
+        </div>
+        <br>
+        <div class="table">
+            <span class="element">
+                <input class="button" type="button" value="Calcular">
+            </span>
+        </div>
+        <br>
+        <label class="cambioLabel">Cambio:</label>
+        <textarea class="textBox" id="cambio"></textarea>
+    </div>
+    <h1 align="center">(Consultar la consola para ver los resultados de la Agenda)</h1>
     <script src="Laboratorio6_3.js"></script>
 </body>
 

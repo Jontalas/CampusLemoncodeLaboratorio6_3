@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 600px;
+    border: 2px solid grey;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.element {
+    display: table-cell;
+    text-align: center;
+}
+
+.elementRight {
+    display: table-cell;
+    text-align: right;
+    padding: 2px;
+}
+
+.elementLeft {
+    display: table-cell;
+    text-align: left;
+    padding: 2px;
+}
+
+.availInput {
+    width: 50px;
+}
+
+.calculoInput {
+    width: 100px;
+}
+
+.button {
+    font-size: large;
+    width: 50%;
+    height: 40px;
+}
+
+.cambioLabel {
+    margin-left: 3%;
+}
+
+.textBox {
+    width: 94%;
+    height: 100px;
+    margin: 3%;
+    resize: none;
+}
